@@ -38,7 +38,9 @@ function GiftCard({ gift }: { gift: Gift }) {
           <h2 className="font-serif text-4xl leading-[1.15] font-normal tracking-[-0.03em] whitespace-pre-line sm:text-5xl">
             {gift.title}
           </h2>
-          <p className="mt-6 max-w-sm text-[15px] leading-7 text-charcoal/75">{gift.body}</p>
+          <p className="mt-6 max-w-sm text-[15px] leading-7 whitespace-pre-line text-charcoal/75">
+            {gift.body}
+          </p>
         </article>
       </div>
     );
@@ -50,13 +52,8 @@ function GiftCard({ gift }: { gift: Gift }) {
   return (
     <div className="grid items-center gap-10 md:grid-cols-2 md:gap-16">
       <div className={`relative mx-auto w-full max-w-sm ${portrait ? "" : "md:justify-self-end"}`}>
-        {gift.note ? (
-          <p className="pointer-events-none relative z-10 -mb-2 ml-auto max-w-48 -rotate-3 text-right font-hand text-xl leading-tight text-charcoal/75">
-            {gift.note}
-          </p>
-        ) : null}
         <figure
-          className={`bg-paper p-3 pb-12 shadow-[0_18px_40px_rgba(28,27,25,0.1)] ${
+          className={`relative bg-paper p-3 pb-16 shadow-[0_18px_40px_rgba(28,27,25,0.1)] ${
             portrait ? "rotate-[1.5deg]" : "rotate-[-2.5deg]"
           }`}
         >
@@ -69,6 +66,11 @@ function GiftCard({ gift }: { gift: Gift }) {
               className="object-cover"
             />
           </div>
+          {gift.note ? (
+            <p className="pointer-events-none absolute right-4 bottom-3 max-w-44 -rotate-2 text-right font-hand text-lg leading-tight text-charcoal/75">
+              {gift.note}
+            </p>
+          ) : null}
         </figure>
       </div>
       <article className={portrait ? "md:pl-2" : ""}>
@@ -96,7 +98,7 @@ export function GiftReveal({ gift, allOpened, onNext, onFinal }: GiftRevealProps
       <button
         type="button"
         onClick={allOpened ? onFinal : onNext}
-        className="absolute top-16 right-5 z-30 -rotate-2 font-hand text-lg text-charcoal underline decoration-champagne decoration-1 underline-offset-4 sm:right-8"
+        className="absolute top-16 right-5 z-30 cursor-pointer rounded-full border border-charcoal/20 bg-paper px-4 py-2 text-sm text-charcoal shadow-[0_8px_20px_rgba(28,27,25,0.08)] transition-colors hover:bg-charcoal hover:text-ivory sm:right-8"
       >
         {allOpened ? "One last thing →" : "Try the next one →"}
       </button>

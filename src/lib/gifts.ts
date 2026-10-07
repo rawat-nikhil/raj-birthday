@@ -8,9 +8,9 @@ const photo = (id: string, alt: string, width = 1200): GiftImage => ({
 export const gifts: Gift[] = [
   {
     id: "adventures",
-    title: "New Places Together",
-    body: "More trips, more stories, more sunsets, more of you in my life.",
-    note: "For more adventures →",
+    title: "A promise to see the world with you.",
+    body: "New cities. New sunsets. Wrong turns. Long drives.\n\nPlaces we’ve dreamed about, and places we haven’t discovered yet.",
+    note: "Wherever we go, I want you beside me.",
     layout: "editorial",
     box: "red",
     images: [
@@ -22,12 +22,17 @@ export const gifts: Gift[] = [
   },
   {
     id: "memories",
-    title: "Good Friends,\nBigger Memories",
-    body: "From football matches to random plans, thank you for always making life more fun.",
+    title: "A promise to create memories with you.",
+    body: "The planned ones.\nThe completely unplanned ones.\n\nThe ordinary days that somehow become our favourite stories.\n\nI hope we never stop making moments worth remembering.",
     note: "",
     layout: "collage",
     box: "black",
     images: [
+      photo(
+        "photo-1511988617509-a57c8a288659",
+        "Friends gathered around a table",
+        900,
+      ),
       {
         src: "/effiel.png",
         alt: "A couple staring at effiel tower at sunset",
@@ -36,32 +41,24 @@ export const gifts: Gift[] = [
         src: "/football.png",
         alt: "A couple playing football together on a grass field",
       },
-
-      photo(
-        "photo-1526232761682-d26e03ac148e",
-        "Friends sitting together on a sunny day",
-        900,
-      ),
-      photo(
-        "photo-1511988617509-a57c8a288659",
-        "Friends gathered around a table",
-        900,
-      ),
+      {
+        src: "/london.png",
+        alt: "A couple stadning in front of riverdale london at night",
+      },
     ],
   },
   {
     id: "message",
-    title: "Keep Being You, Raj.",
-    body: "Kind, fun, loyal, inspiring — and completely one of a kind.\n\nYou make life brighter for everyone around you.\n\nHere’s to everything you’re yet to achieve.",
-    note: "Same passion. Bigger dreams.",
+    title: "A promise to keep you mine.",
+    body: "Through every version of us.\n\nThrough the easy days, the difficult ones, and everything still waiting for us.",
+    note: "I’ll keep choosing you. Again and again.",
     layout: "portrait",
     box: "green",
     images: [
-      photo(
-        "photo-1500648767791-00dcc994a43e",
-        "A warm portrait of a smiling man",
-        1000,
-      ),
+      {
+        src: "/yatch.png",
+        alt: "A couple stadning in front of riverdale london at night",
+      },
     ],
   },
 ];

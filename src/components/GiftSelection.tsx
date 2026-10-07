@@ -66,7 +66,7 @@ export function GiftSelection({ openedIds, onPick, onFinal }: GiftSelectionProps
           <button
             type="button"
             onClick={onFinal}
-            className="mt-10 font-hand text-lg text-charcoal underline decoration-champagne decoration-1 underline-offset-4"
+            className="mt-10 cursor-pointer rounded-full border border-charcoal/20 bg-paper px-4 py-2 text-sm text-charcoal shadow-[0_8px_20px_rgba(28,27,25,0.08)] transition-colors hover:bg-charcoal hover:text-ivory"
           >
             One last thing →
           </button>
