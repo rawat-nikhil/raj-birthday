@@ -18,13 +18,14 @@ const caveat = Caveat({
 });
 
 const shareImage = {
-  url: "/final.png",
-  width: 1086,
-  height: 1448,
+  url: "/og.jpg",
+  width: 1200,
+  height: 630,
   alt: "Raj standing on rocks beside a river with his arms open",
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://raj-birthday.vercel.app"),
   title: "Happy Birthday, Raj",
   description: "A small birthday surprise, made just for Raj.",
   openGraph: {
