@@ -20,12 +20,10 @@ function Heart() {
       viewBox="0 0 24 24"
       fill="none"
       aria-hidden="true"
-      className="text-charcoal/70"
     >
       <path
         d="M12 19.4s-6.4-4-6.4-8.2a3.6 3.6 0 0 1 6.4-1.8 3.6 3.6 0 0 1 6.4 1.8c0 4.2-6.4 8.2-6.4 8.2Z"
-        stroke="currentColor"
-        strokeWidth="1.2"
+        fill="#e23b3b"
       />
     </svg>
   );

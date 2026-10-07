@@ -14,10 +14,10 @@ export const gifts: Gift[] = [
     layout: "editorial",
     box: "red",
     images: [
-      photo(
-        "photo-1551632811-561732d1e306",
-        "A hiker with a backpack looking out over a mountain valley",
-      ),
+      {
+        src: "/rome.png",
+        alt: "A couple sitting together in front of the Colosseum",
+      },
     ],
   },
   {
@@ -28,16 +28,15 @@ export const gifts: Gift[] = [
     layout: "collage",
     box: "black",
     images: [
-      photo(
-        "photo-1574629810360-7efbbe195018",
-        "A football match under the lights",
-        900,
-      ),
-      photo(
-        "photo-1529156069898-49953e39b3ac",
-        "Friends laughing together outdoors",
-        900,
-      ),
+      {
+        src: "/effiel.png",
+        alt: "A couple staring at effiel tower at sunset",
+      },
+      {
+        src: "/football.png",
+        alt: "A couple playing football together on a grass field",
+      },
+
       photo(
         "photo-1526232761682-d26e03ac148e",
         "Friends sitting together on a sunny day",
