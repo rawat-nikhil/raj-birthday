@@ -63,11 +63,10 @@ export const gifts: Gift[] = [
   },
 ];
 
-export const closingImage: GiftImage = photo(
-  "photo-1500534314209-a25ddb2bd429",
-  "A quiet mountain landscape in warm evening light",
-  800,
-);
+export const closingImage: GiftImage = {
+  src: "/final.png",
+  alt: "Raj standing on rocks beside a river with his arms open",
+};
 
 export function giftById(id: string | null) {
   return gifts.find((gift) => gift.id === id) ?? null;

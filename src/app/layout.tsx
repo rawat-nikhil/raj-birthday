@@ -17,9 +17,27 @@ const caveat = Caveat({
   subsets: ["latin"],
 });
 
+const shareImage = {
+  url: "/final.png",
+  width: 1086,
+  height: 1448,
+  alt: "Raj standing on rocks beside a river with his arms open",
+};
+
 export const metadata: Metadata = {
   title: "Happy Birthday, Raj",
   description: "A small birthday surprise, made just for Raj.",
+  openGraph: {
+    title: "Happy Birthday, Raj",
+    description: "A small birthday surprise, made just for Raj.",
+    images: [shareImage],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Happy Birthday, Raj",
+    description: "A small birthday surprise, made just for Raj.",
+    images: [shareImage],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

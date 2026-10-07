@@ -14,15 +14,24 @@ export function FinalMessage({ onReplay }: FinalMessageProps) {
         <h2 className="font-serif text-5xl leading-none font-normal tracking-[-0.035em] sm:text-6xl">
           Happy 33rd, Raj.
         </h2>
-        <p className="mt-8 font-serif text-xl leading-relaxed text-charcoal/80 sm:text-2xl">
-          Here’s to more memories,
+        <p className="mt-8 font-serif text-md leading-relaxed text-charcoal/80 sm:text-xl">
+          You are so much more than the person I love.
           <br />
-          more adventures,
+          You are kind, strong, thoughtful,
           <br />
-          and a really good year ahead.
-        </p>
-        <p className="mt-8 text-sm tracking-wide text-charcoal/55">
-          Made with love, just for you.
+          and someone who makes the people around you feel loved.
+          <br />
+          I hope you never forget how special you are,
+          <br />
+          how far you’ve come,
+          <br />
+          and how much more is waiting for you.
+          <br />
+          Keep dreaming. Keep growing.
+          <br />
+          And most importantly, keep being you.
+          <br />
+          The world is a little better with you in it.
         </p>
         <figure className="mt-10 w-36 -rotate-2 bg-paper p-2 pb-6 shadow-[0_16px_30px_rgba(28,27,25,0.08)] sm:w-40">
           <div className="relative aspect-4/5">
@@ -35,12 +44,16 @@ export function FinalMessage({ onReplay }: FinalMessageProps) {
             />
           </div>
         </figure>
+        <p className="mt-8 text-sm tracking-wide text-charcoal/55">
+          Happy birthday to my favourite human.{" "}
+          <span className="text-[#e23b3b]">♥</span>
+        </p>
         <button
           type="button"
           onClick={onReplay}
           className="mt-12 text-sm text-charcoal/70 underline decoration-champagne underline-offset-[5px] transition-colors hover:text-charcoal"
         >
-          Replay the presents ↻
+          Replay the vow&apos;s ↻
         </button>
       </div>
     </div>
